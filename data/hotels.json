@@ -1,0 +1,9 @@
+[
+  {
+    "hotel_id": "H1",
+    "name": "Hotel Centro",
+    "location": "MTY",
+    "total_rooms": 2,
+    "available_rooms": 1
+  }
+]
