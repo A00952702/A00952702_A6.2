@@ -51,8 +51,9 @@ def create_customer(customer: Customer) -> bool:
     """Create a customer. Returns False if ID already exists."""
     customers = _load_all()
     if any(c.customer_id == customer.customer_id for c in customers):
-        print("[Customer] Error: customer_id already exists: "
-        f"{customer.customer_id}"
+        print(
+            "[Customer] Error: customer_id already exists: "
+            f"{customer.customer_id}"
         )
         return False
 
