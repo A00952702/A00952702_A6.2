@@ -73,7 +73,12 @@ def create_reservation(reservation: Reservation) -> bool:
     - reserve_room(hotel_id) must succeed
     """
     reservations = _load_all()
-    if any(r.reservation_id == reservation.reservation_id for r in reservations):
+    reservation_exists = any(
+        r.reservation_id == reservation.reservation_id
+        for r in reservations
+    )
+
+    if reservation_exists:
         print(
             "[Reservation] Error: reservation_id already exists: "
             f"{reservation.reservation_id}"
