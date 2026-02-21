@@ -85,7 +85,10 @@ def create_reservation(reservation: Reservation) -> bool:
         return False
 
     if get_customer(reservation.customer_id) is None:
-        print(f"[Reservation] Error: customer not found: {reservation.customer_id}")
+        print(
+            "[Reservation] Error: customer not found: "
+            f"{reservation.customer_id}"
+        )
         return False
 
     if not reserve_room(reservation.hotel_id):
