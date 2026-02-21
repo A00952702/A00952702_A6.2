@@ -140,7 +140,10 @@ def cancel_reservation_room(hotel_id: str) -> bool:
     for h in hotels:
         if h.hotel_id == hotel_id:
             if h.available_rooms >= h.total_rooms:
-                print(f"[Hotel] Error: rooms already at max in hotel {hotel_id}")
+                print(
+                    "[Hotel] Error: rooms already at max in hotel "
+                    f"{hotel_id}"
+                )
                 return False
             h.available_rooms += 1
             _save_all(hotels)
