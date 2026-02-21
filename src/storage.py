@@ -11,7 +11,9 @@ from typing import Any
 
 
 def read_json_list(path: str) -> list[dict[str, Any]]:
-    """Read a JSON file that must contain a list. Returns empty list if file is empty."""
+    """Read a JSON file that must contain a list.
+       Returns an empty list if the file is empty.
+     """
     file_path = Path(path)
 
     if not file_path.exists():
