@@ -13,7 +13,7 @@ class TestReservation(unittest.TestCase):
         Path("data/reservations.json").write_text("[]", encoding="utf-8")
 
         self.assertTrue(create_hotel(Hotel("H1", "Hotel Centro", "MTY", 2, 2)))
-        self.assertTrue(create_customer(Customer("C1", "Gerardo", "g@mail.com")))
+        self.assertTrue(create_customer(Customer("C1", "Ger", "g@mail.com")))
 
     def test_create_reservation_decreases_rooms(self):
         ok = create_reservation(Reservation("R1", "H1", "C1"))
