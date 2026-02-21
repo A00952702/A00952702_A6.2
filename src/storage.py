@@ -37,4 +37,3 @@ def write_json_list(path: str, items: list[dict[str, Any]]) -> None:
         json.dumps(items, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
-    
