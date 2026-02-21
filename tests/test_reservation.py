@@ -30,3 +30,4 @@ class TestReservation(unittest.TestCase):
         hotel = get_hotel("H1")
         self.assertIsNotNone(hotel)
         self.assertEqual(hotel.available_rooms, 2)
+        
