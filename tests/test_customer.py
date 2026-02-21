@@ -20,4 +20,3 @@ class TestCustomer(unittest.TestCase):
         self.assertTrue(create_customer(cust))
         self.assertTrue(delete_customer("C1"))
         self.assertIsNone(get_customer("C1"))
-        

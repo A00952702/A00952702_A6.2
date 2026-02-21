@@ -22,4 +22,3 @@ class TestHotel(unittest.TestCase):
         self.assertTrue(create_hotel(hotel))
         self.assertTrue(delete_hotel("H1"))
         self.assertIsNone(get_hotel("H1"))
-        
