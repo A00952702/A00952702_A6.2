@@ -1,7 +1,12 @@
 import unittest
 from pathlib import Path
 
-from src.customer import Customer, create_customer, delete_customer, get_customer
+from src.customer import (
+    Customer,
+    create_customer,
+    delete_customer,
+    get_customer,
+)
 
 
 class TestCustomer(unittest.TestCase):
